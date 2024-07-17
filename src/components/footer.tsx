@@ -37,48 +37,77 @@ export function Footer() {
           <div className="flex col-span-2 items-center gap-10 mb-10 lg:mb-0 md:gap-36">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
-              
                 {LINKS.map(({ title, items }) => (
-              <ul key={title}>
-                <Typography variant="h6" color="blue-gray" className="mb-4">
-                  {title}
-                </Typography>
-                {items.map(({ title: linkTitle, url }) => (
-                  <li key={linkTitle}>
-                    <Link href={url} passHref>
-                      <Typography
-                        as="a"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="py-1 font-normal !text-gray-700 transition-colors hover:!text-gray-900"
-                      >
-                        {linkTitle}
-                      </Typography>
-                    </Link>
-                  </li>
+                  <ul key={title}>
+                    <Typography
+                      variant="h6"
+                      color="blue-gray"
+                      className="mb-4"
+                      onPointerEnterCapture={() => {}}
+                      onPointerLeaveCapture={() => {}}
+                    >
+                      {title}
+                    </Typography>
+                    {items.map(({ title: linkTitle, url }) => (
+                      <li key={linkTitle}>
+                        <Link href={url} passHref>
+                          <Typography
+                            as="a"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onPointerEnterCapture={() => {}}
+                            onPointerLeaveCapture={() => {}}
+                            className="py-1 font-normal !text-gray-700 transition-colors hover:!text-gray-900"
+                          >
+                            {linkTitle}
+                          </Typography>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 ))}
-              </ul>
-            ))}
-
               </ul>
             ))}
           </div>
           <div className="">
-            <Typography variant="h6" className="mb-3 text-left">
+            <Typography
+              variant="h6"
+              className="mb-3 text-left"
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
               Subscribe
             </Typography>
-            <Typography className="!text-gray-500 font-normal mb-4 text-base">
+            <Typography
+              className="!text-gray-500 font-normal mb-4 text-base"
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
               Get access to subscriber exclusive deals and be the first who gets
               informed about fresh sales.
             </Typography>
-            <Typography variant="small" className="font-medium mb-2 text-left">
+            <Typography
+              variant="small"
+              className="font-medium mb-2 text-left"
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
               Your Email
             </Typography>
             <div className="flex mb-3 flex-col lg:flex-row items-start gap-4">
               <div className="w-full">
                 {/* @ts-ignore */}
-                <Input label="Email" color="gray" />
-                <Typography className="font-medium mt-3 !text-sm !text-gray-500 text-left">
+                <Input
+                  label="Email"
+                  color="gray"
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
+                />
+                <Typography
+                  className="font-medium mt-3 !text-sm !text-gray-500 text-left"
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
+                >
                   I agree the{" "}
                   <a
                     href="#"
@@ -88,7 +117,13 @@ export function Footer() {
                   </a>
                 </Typography>
               </div>
-              <Button color="gray" className="w-full lg:w-fit" size="md">
+              <Button
+                color="gray"
+                className="w-full lg:w-fit"
+                size="md"
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
+              >
                 button
               </Button>
             </div>
@@ -96,13 +131,18 @@ export function Footer() {
         </div>
         <Typography
           color="blue-gray"
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
           className="md:text-center mt-16 font-normal !text-gray-700"
         >
-          &copy; {CURRENT_YEAR} Made with 💖 by {" "}
-          <Link href="https://bio.link/princeaj" target="_blank" className="text-red-600 underline">
+          &copy; {CURRENT_YEAR} Made with 💖 by{" "}
+          <Link
+            href="https://bio.link/princeaj"
+            target="_blank"
+            className="text-red-600 underline"
+          >
             @princeajuzie
           </Link>{" "}
-      
           .
         </Typography>
       </div>

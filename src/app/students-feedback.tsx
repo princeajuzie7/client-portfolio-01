@@ -33,12 +33,20 @@ export function StudentsFeedback() {
     <section className="px-8 py-36">
       <div className="container mx-auto">
         <div className="mb-16 flex flex-col items-center w-full">
-          <Typography variant="h2" color="blue-gray" className="mb-2">
+          <Typography
+            variant="h2"
+            color="blue-gray"
+            className="mb-2"
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+          >
             What Our Students Are Saying
           </Typography>
           <Typography
             variant="lead"
             className="mb-10 max-w-3xl lg:text-center !text-gray-500"
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
           >
             Our mission is to empower individuals with the knowledge and skills
             they need to succeed in the world of web development. But don&apos;t

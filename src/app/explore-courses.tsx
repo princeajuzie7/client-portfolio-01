@@ -20,12 +20,15 @@ export function ExploreCourses() {
   return (
     <section className="px-8 mt-5" >
       <div className="container mx-auto mb-24 text-center" >
-        <Typography variant="h2" color="blue-gray">
+        <Typography variant="h2" color="blue-gray"   onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}>
           Explore Courses
         </Typography>
         <Typography
           variant="lead"
           className="mt-2 mx-auto w-full px-4 !text-gray-500 lg:w-6/12 lg:px-8"
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
         >
           Browse through my courses and find the one that
           fits your needs.
@@ -43,7 +46,8 @@ export function ExploreCourses() {
                 href="https://t.me/+uB2rVR9mGeRiMDg0"
                 target="_blank"
               >
-                <Button color="gray" className='flex items-center justify-center gap-3' > 
+                <Button color="gray" className='flex items-center justify-center gap-3'   onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}> 
                 <svg
   width="24px"
   height="24px"

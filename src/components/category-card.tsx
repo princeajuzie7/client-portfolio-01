@@ -11,7 +11,11 @@ interface CategoryCardProps {
 
 function CategoryCard({ img, title, desc, icon: Icon }: CategoryCardProps) {
   return (
-    <Card className="relative grid min-h-[12rem] w-full overflow-hidden">
+    <Card
+      className="relative grid min-h-[12rem] w-full overflow-hidden"
+      onPointerEnterCapture={() => {}}
+      onPointerLeaveCapture={() => {}}
+    >
       <Image
         width={768}
         height={768}
@@ -20,13 +24,28 @@ function CategoryCard({ img, title, desc, icon: Icon }: CategoryCardProps) {
         className="absolute inset-0 h-full w-full object-cover object-center"
       />
       <div className="absolute inset-0 h-full w-full bg-black/70" />
-      <CardBody className="relative flex flex-col justify-between">
+      <CardBody
+        className="relative flex flex-col justify-between"
+        onPointerEnterCapture={() => {}}
+        onPointerLeaveCapture={() => {}}
+      >
         <Icon className="h-8 w-8 text-white" />
         <div>
-          <Typography variant="h5" className="mb-1" color="white">
+          <Typography
+            variant="h5"
+            className="mb-1"
+            color="white"
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+          >
             {title}
           </Typography>
-          <Typography color="white" className="text-xs font-bold opacity-50">
+          <Typography
+            color="white"
+            className="text-xs font-bold opacity-50"
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+          >
             {desc}
           </Typography>
         </div>

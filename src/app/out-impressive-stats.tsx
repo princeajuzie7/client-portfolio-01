@@ -26,15 +26,24 @@ export function OutImpressiveStats() {
     <section className="px-8 mt-60">
       <div className=" mx-auto text-center lg:text-left">
         <div className="grid place-items-center text-center">
-          <Typography variant="h2" color="blue-gray" className="mb-2 text-4xl">
+          <Typography
+            variant="h2"
+            color="blue-gray"
+            className="mb-2 text-4xl"
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+          >
             Explore Our Impressive Stats
           </Typography>
           <Typography
             variant="lead"
             className="mx-auto mb-24 w-full !text-gray-500 lg:w-5/12"
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
           >
-            Find out the basics in business before starting up one and know the common mistakes you are making in your business that is slowing down your sales.
-
+            Find out the basics in business before starting up one and know the
+            common mistakes you are making in your business that is slowing down
+            your sales.
           </Typography>
         </div>
         <div className="grid ">

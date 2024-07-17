@@ -15,7 +15,7 @@ function Hero() {
   }
 
   return (
-    <div className="!flex h-[55vh] w-full items-center justify-between px-10   lg:mb-96 md:mb-80">
+    <div className="!flex h-[55vh] w-full items-center justify-between px-10 lg:mb-96 md:mb-80">
       <Image
         width={1200}
         height={1200}
@@ -23,10 +23,20 @@ function Hero() {
         alt="bg-img"
         className="absolute inset-0 ml-auto w-[920px] h-[780px] rounded-bl-[100px] object-cover object-center"
       />
-      <div className=" md:w-fit h-fit  mx-auto   m-auto">
-        <div className="grid grid-cols-12  text-center lg:text-left ">
-          <Card className="col-span-full rounded-xl border border-white bg-white/90 px-5 shadow-lg shadow-black/10 backdrop-blur-sm backdrop-saturate-200 xl:col-span-7 border-3  mt-[310px]">
-            <Typography variant="lead" className="mb-10 mt-6 !text-gray-900">
+      <div className="md:w-fit h-fit mx-auto m-auto">
+        <div className="grid grid-cols-12 text-center lg:text-left">
+          <Card
+            className="col-span-full rounded-xl border border-white bg-white/90 px-5 shadow-lg shadow-black/10 backdrop-blur-sm backdrop-saturate-200 xl:col-span-7 border-3 mt-[310px]"
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+            // Include other props as necessary
+          >
+            <Typography
+              variant="lead"
+              className="mb-10 mt-6 !text-gray-900"
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
               YOUR BUSINESS IS ABOUT TO CHANGE FOREVER!!
             </Typography>
             <div className="mb-8 flex justify-center gap-4 lg:justify-start flex-wrap">
@@ -34,8 +44,9 @@ function Hero() {
                 <Button
                   color="gray"
                   className="flex items-center justify-center gap-3"
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
                 >
-                  {" "}
                   <svg
                     width="34px"
                     height="34px"
@@ -51,17 +62,16 @@ function Hero() {
                       strokeLinejoin="round"
                     />
                     <g id="SVGRepo_iconCarrier">
-                      {" "}
                       <path
                         d="M9 3.5V2M5.06066 5.06066L4 4M5.06066 13L4 14.0607M13 5.06066L14.0607 4M3.5 9H2M8.5 8.5L12.6111 21.2778L15.5 18.3889L19.1111 22L22 19.1111L18.3889 15.5L21.2778 12.6111L8.5 8.5Z"
                         stroke="#FF0000"
                         strokeWidth={2}
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                      />{" "}
+                      />
                     </g>
                   </svg>
-                  Join now{" "}
+                  Join now
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     aria-label="Telegram"
@@ -82,10 +92,16 @@ function Hero() {
                       fill="#f6fbfe"
                       d="M204 319l135 99c14 9 26 4 30-14l55-258c5-22-9-32-24-25L79 245c-21 8-21 21-4 26l83 26 190-121c9-5 17-3 11 4"
                     />
-                  </svg>{" "}
+                  </svg>
                 </Button>
               </Link>
-              <Button color="gray" variant="outlined" onClick={ScrollToCourse}>
+              <Button
+                color="gray"
+                variant="outlined"
+                onClick={ScrollToCourse}
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
+              >
                 see pricing
               </Button>
             </div>
@@ -95,4 +111,5 @@ function Hero() {
     </div>
   );
 }
+
 export default Hero;

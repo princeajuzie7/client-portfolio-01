@@ -50,6 +50,8 @@ function NavItem({ children, href }: NavItemProps) {
         as="a"
         href={href || "#"}
         target={href ? "_blank" : "_self"}
+          onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
         variant="paragraph"
         color="gray"
         className="flex items-center gap-2 font-medium text-gray-900"
@@ -89,10 +91,17 @@ export function Navbar() {
         <MTNavbar
           blurred
           color="white"
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
           className="z-50 mt-6 relative border-0 pr-3 py-3 pl-6"
         >
           <div className="flex items-center justify-between">
-            <Typography color="blue-gray" className="text-lg font-bold">
+            <Typography
+              color="blue-gray"
+              className="text-lg font-bold"
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
               Favour Philip
             </Typography>
             <ul className="ml-10 hidden items-center gap-8 lg:flex">
@@ -104,17 +113,24 @@ export function Navbar() {
               ))}
             </ul>
             <div className="hidden items-center gap-4 lg:flex">
-             
               <a
                 href="https://www.material-tailwind.com/blocks"
                 target="_blank"
               >
-                <Button color="gray">Contact Me</Button>
+                <Button
+                  color="gray"
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
+                >
+                  Contact Me
+                </Button>
               </a>
             </div>
             <IconButton
               variant="text"
               color="gray"
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
               onClick={handleOpen}
               className="ml-auto inline-block lg:hidden"
             >
@@ -136,12 +152,17 @@ export function Navbar() {
                 ))}
               </ul>
               <div className="mt-6 mb-4 flex items-center gap-4">
-
                 <a
                   href="https://www.material-tailwind.com/blocks"
                   target="_blank"
                 >
-                  <Button color="gray">Contact Me</Button>
+                  <Button
+                    color="gray"
+                    onPointerEnterCapture={() => {}}
+                    onPointerLeaveCapture={() => {}}
+                  >
+                    Contact Me
+                  </Button>
                 </a>
               </div>
             </div>

@@ -61,10 +61,12 @@ export default function CourseVideo() {
     <div>
       <div className="video-responsive flex flex-col items-center justify-center px-10 ">
         <div className="mb-20 grid place-items-center text-center">
-          <Typography variant="h2" color="blue-gray" className="my-3">
+          <Typography variant="h2" color="blue-gray" className="my-3"   onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}> 
             Your business is about to change forever!!
           </Typography>
-          <Typography variant="lead" className="!text-gray-500 lg:w-6/12">
+          <Typography variant="lead" className="!text-gray-500 lg:w-6/12"   onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}>
           Get clarity on how to make massive income from your business.
 The course explains practical ways and strategies to grow any business in any field.
 Suitable for product and service based businesses online and offline.

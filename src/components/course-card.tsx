@@ -18,8 +18,16 @@ declare module "@material-tailwind/react"{
 }
 export function CourseCard({ img, tag, title, desc, label, price }: CourseCardProps) {
   return (
-    <Card className="border w-fit">
-      <CardHeader className="h-64   ">
+    <Card
+      className="border w-fit"
+      onPointerEnterCapture={() => {}}
+      onPointerLeaveCapture={() => {}}
+    >
+      <CardHeader
+        className="h-64   "
+        onPointerEnterCapture={() => {}}
+        onPointerLeaveCapture={() => {}}
+      >
         <Image
           width={900}
           height={768}
@@ -28,11 +36,16 @@ export function CourseCard({ img, tag, title, desc, label, price }: CourseCardPr
           className="h-full w-fit px-4 py-0 object-contain scale-[1.1]"
         />
       </CardHeader>
-      <CardBody>
+      <CardBody
+        onPointerEnterCapture={() => {}}
+        onPointerLeaveCapture={() => {}}
+      >
         <div className="flex items-center gap-2">
           <Typography
             variant="small"
             color="blue"
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
             className="mb-2 font-normal text-gray-500"
           >
             {tag}
@@ -42,29 +55,59 @@ export function CourseCard({ img, tag, title, desc, label, price }: CourseCardPr
           href="#"
           className="text-blue-gray-900 transition-colors hover:text-gray-900"
         >
-          <Typography variant="h5" className="mb-2 normal-case">
+          <Typography
+            variant="h5"
+            className="mb-2 normal-case"
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+          >
             {title}
           </Typography>
         </a>
-        <Typography className="mb-6 font-normal !text-gray-500">
+        <Typography
+          className="mb-6 font-normal !text-gray-500"
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
           {desc}
         </Typography>
-    <Typography className="flex items-center gap-2 justify-between">
-
-        <Typography className="flex items-center flex-col ">
-
-          
-        <p>normal price</p>
-        <Button variant="outlined" className="line-through cursor-default">{label}</Button>
+        <Typography
+          className="flex items-center gap-2 justify-between"
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
+          <Typography
+            className="flex items-center flex-col "
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+          >
+            <p>normal price</p>
+            <Button
+              variant="outlined"
+              className="line-through cursor-default"
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
+              {label}
+            </Button>
+          </Typography>
+          <Typography
+            className="flex items-center flex-col"
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+          >
+            <p>Slash Price</p>
+            <Button
+              variant="outlined"
+              className=" cursor-default"
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
+              {price}
+            </Button>
+          </Typography>
         </Typography>
-        <Typography className="flex items-center flex-col">
-
-          
-        <p>Slash Price</p>
-        <Button variant="outlined" className=" cursor-default">{price}</Button>
-        </Typography>
-    </Typography>
-      <h2 className="text-center mt-5">Hurry up! Limited-time offer 🎉.</h2>
+        <h2 className="text-center mt-5">Hurry up! Limited-time offer 🎉.</h2>
       </CardBody>
     </Card>
   );
