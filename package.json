@@ -1,8 +1,8 @@
 {
-  "name": "nextjs-tailwind-course-landing-page",
+  "name": "favour-philip",
   "version": "1.0.0",
   "private": true,
-  "author": "Creative Tim",
+  "author": "princeajuzie",
   "license": "See license in https://www.creative-tim.com/license",
   "homepage": "https://demos.creative-tim.com/nextjs-tailwind-course-landing-page",
   "scripts": {
@@ -30,5 +30,7 @@
     "postcss": "8",
     "tailwindcss": "3",
     "typescript": "5"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/princeajuzie7/client-portfolio-01.git"
 }

@@ -1,5 +1,5 @@
 // components
-"use client"
+"use client";
 import { Navbar, Footer } from "@/components";
 
 // sections
@@ -18,44 +18,31 @@ import Hostingpage from "./hostingpage";
 import { useEffect, useState } from "react";
 
 export default function Campaign() {
-  const [hidden, setHidden ] = useState(false)
+  const [hidden, setHidden] = useState(false);
 
-  useEffect(()=>{
-     
-    setTimeout(()=>{
-      setHidden(true)
-    },1000)
-
-  },[])
-
+  useEffect(() => {
+    setTimeout(() => {
+      setHidden(true);
+    }, 1000);
+  }, []);
 
   return (
     <>
-    {  hidden?
-    <div className="flex items-center justify-center h-[100vh]">
-
-
-      <Hostingpage />
-    </div>
-
-    :
       <>
-      
-      <Navbar />
-      <Hero />
-      <OutImpressiveStats />
-       <CourseVideo />
-      <ExploreCourses />
-     <Countdown />
-      {/* <CoursesCategories /> */}
-      {/* <Events /> */}
-      {/* <StudentsFeedback /> */}
-      {/* <TrustedCompany /> */}
-      <Finally />
-    
-      <Footer />
+        <Navbar />
+        <Hero />
+        <OutImpressiveStats />
+        <CourseVideo />
+        <ExploreCourses />
+        <Countdown />
+        {/* <CoursesCategories /> */}
+        {/* <Events /> */}
+        {/* <StudentsFeedback /> */}
+        {/* <TrustedCompany /> */}
+        <Finally />
+
+        <Footer />
       </>
-    }
     </>
   );
 }
